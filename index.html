@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waste Wise</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Style for dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Waste Wise</div>
+    <ul>
+      <li class="dropdown">
+        <a href="index.html">Home</a>
+        <div class="dropdown-content">
+          <a href="#">Waste Management</a>
+          <a href="#">Disposal Methods</a>
+          <a href="#">Residential</a>
+          <a href="#">Commercial</a>
+          <a href="#">Industrial</a>
+          <a href="#">Recycling</a>
+          <a href="#">Waste Separation</a>
+          <a href="#">E-waste</a>
+          <a href="#">Hazardous</a>
+          <a href="#">Sanitary</a>
+          <a href="#">Schedules</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+    </ul>
+    <!-- Container to show signed in user's name -->
+    <div id="user-info"></div>
+  </nav>
+
+  <section class="hero">
+    <h1>Smart Waste Management Solutions</h1>
+    <p>"Reducing and disposing waste through innovative technology and sustainable practices."</p>
+    <a href="#" class="btn">Read More</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
